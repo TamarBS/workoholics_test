@@ -1,0 +1,276 @@
+.container {
+  margin: 0;
+  padding: 40px 90px 0px 90px;
+}
+
+header {
+  position: relative;
+  height: 50px;
+}
+
+  header nav, header img{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-0%, -50%);
+    transform: translate(-0%, -50%);
+  }
+
+ul { padding: 0; }
+
+  nav { right: 0; }
+
+    li { display: inline; }
+    li:not(:first-child) { margin-left: 50px; }
+
+.margin_b {
+  margin-bottom: 190px;
+}
+
+/* Title --------------------------------------------------------------- */
+#title {
+  position: relative;
+}
+
+h2 {
+  font-size: 217px;
+  margin: 5px;
+}
+
+#title img {
+  position: absolute;
+  right: 0.8em;
+  top: 0;
+  z-index: 1;
+}
+
+.title_left {
+  padding-left: 0.4em;
+}
+
+.title-right {
+  padding-right: 1.2em;
+  text-align: right;
+  position: relative;
+  z-index: 2;  
+}
+
+/* Floating sentence ---------------------------------------------------------- */
+#under_title {
+  position: relative;
+  height: 100px;
+}
+
+#floating_sentence {
+  position: absolute;
+  width: 70%;
+  right: 0;
+}
+
+.little_circle {
+  background-color: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 11px;
+}
+
+#floating_sentence li {
+  font-size: 32px;
+}
+
+/* Shop ---------------------------------------------------------------*/
+
+h3 {
+  font-size: 90px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: black;
+}
+
+.rectangle_pink {
+  background-color: pink;
+  width: 50px;
+  height: 14px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.rectangle_black {
+  background-color: black;
+  width: 50px;
+  height: 14px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+button {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+}
+
+  button >* {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+  }
+
+  button p {
+    font-size: 20px;
+    margin-right: 16px;
+  }
+
+img[alt="camiseta"] {
+  -webkit-transform: scaleX(-1) rotate(350deg);
+  transform: scaleX(-1) rotate(350deg);
+}
+
+.shop, .caracteristics, .separator {
+  width: 100%;
+}
+
+.mitad {
+  width: 50%;
+  height: 500px;
+  position: relative;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-0%, -50%);
+  transform: translate(-0%, -50%);
+}
+
+.text {
+  width: 50%;
+  margin-bottom: 45px;
+}
+
+.caracteristics {
+  margin-bottom: 30px;;
+}
+.mitad img:first-child{
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+#card_bottle {
+  left: 50%;
+}
+
+/* Contact --------------------------------------------------------------- */
+
+#contact {
+  position: fixed;
+  bottom: 6em;
+  right: 33px;
+}
+
+.line_contact {
+  height: 44px;
+  width: 2px;
+  background-color: pink;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+#contact a {
+  vertical-align: sub;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 24px;
+}
+
+/* Footer ---------------------------------------------------------------*/
+
+footer {
+  background-color: gray;
+  margin: 0;
+  padding: 90px;
+  display: flex;
+}
+
+#footer_left {
+  width: 30%;
+  display: inline-block;
+}
+
+#footer_left >* {
+  font-size: 25px;
+}
+
+#footer_right {
+  width: 70%;
+  display: inline-block;
+}
+
+h4 {
+  margin: 0;
+  font-size: 35px;
+}
+
+#letter_sign {
+  margin-top: 100px;
+}
+
+input[type="email"] {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 15px;
+}
+
+input[type="submit"], form img {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+/* input[type="submit"] {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+}
+
+  input[type="submit"] img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; */
+
+  }
+
+  /* button p {
+    font-size: 20px;
+    margin-right: 16px;
+  } */
