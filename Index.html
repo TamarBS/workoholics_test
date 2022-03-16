@@ -4,103 +4,122 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>Worköholics test</title>
 </head>
 <body>
-  <header>
-    <img src="images/Logo.svg" alt="logo" width="200"> 
-    <nav>
-      <ul>
-        <li>Menu 1</li>
-        <li>Menu 2</li>
-        <li>Menu 3</li>
-      </ul>
-    </nav>
-  </header>
+  <div class="container">
+    <header>
+      <img src="images/Logo.svg" alt="logo" width="185"> 
+      <nav>
+        <ul>
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+      </nav> 
+    </header>
 
-  <div>
-    <H2>LOREM</H2>
-    <hr/>
-    <H2>IPSUM</H2>
-    <hr/>
-    <H2>DOLOR</H2>
-    <img src="images/Mug1.png" alt="taza" width="400">    
-  </div>
-
-  <div>
-    <div></div>
-    <li>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-      Etiam <b>vulputate dui efficitur</b> ultrices pharetra. 
-      Praesent tempor mollis purus nec fringilla.
-    </li>    
-  </div>
-
-  <div>
-    <div>
-      <h3>T-shirt</h3>
-      <p>
-        Etiam vulputate dui efficitur ultrices pharetra. 
-        Praesent tempor mollis purus.
-      </p>      
+    <div id="title" class="margin_b">
+      <H2 class="title_left">LOREM</H2>
+      <hr/>
+      <H2 class="title-right">IPSUM</H2>
+      <hr/>
+      <H2 class="title_left">DOLOR</H2>
+      <img src="images/Mug1.png" alt="taza" width="645">    
     </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>         
+
+    <div id="under_title" class="margin_b">
+      <div id="floating_sentence">
+        <div class="little_circle"></div>      
+        <li>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Etiam <b>vulputate dui efficitur</b> ultrices pharetra. 
+          Praesent tempor mollis purus nec fringilla.
+        </li>        
       </div>
-      <button>Buy&raquo;</button>
     </div>
-    <hr/>
-    <img src="images/Tshirt1.png" alt="camiseta" width="400">
-  </div>
 
-  <div>
-    <div>
-      <h3>Bottle</h3>
-      <p>
-        Etiam vulputate dui efficitur ultrices pharetra. 
-        Praesent tempor mollis purus.
-      </p>      
-    </div>
-    <div>
-      <div>
-        <div></div>         
+    <div class="shop">
+      <div class="mitad">
+        <img src="images/Tshirt1.png" alt="camiseta" height="500">
+        <div class="info">
+          <div class="text">
+            <h3>T-shirt</h3>
+            <p>
+              Etiam vulputate dui efficitur ultrices pharetra. 
+              Praesent tempor mollis purus.
+            </p>
+          </div>
+          <div class="caracteristics">
+            <div class="rectangle_black"></div>
+            <div class="rectangle_pink"></div>
+            <button>
+              <p>Buy</p>
+              <img src="images/BuyArrow.svg" alt="buy" width="31"></button>
+            </button>
+          </div>
+        <div class="line"></div>        
+        </div>
       </div>
-      <button>Buy&raquo;</button>
     </div>
-    <hr/>
-    <img src="images/Bottle1.png" alt="botella" width="400">
+
+    <div class="margin_b shop">
+      <div class="mitad" id="card_bottle">
+        <img src="images/Bottle1.png" alt="botella" height="500">
+        <div class="info">
+          <div class="text">
+            <h3>Bottle</h3>
+            <p>
+              Etiam vulputate dui efficitur ultrices pharetra. 
+              Praesent tempor mollis purus.
+            </p>
+          </div>
+          <div class="caracteristics">
+            <div class="rectangle_pink"></div>
+            <button>
+              <p>Buy</p>
+              <img src="images/BuyArrow.svg" alt="buy" width="31"></button>
+            </button>
+          </div>
+        <div class="line"></div>        
+        </div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="line_contact" ></div>
+      <a href="#">Contact us</a>
+    </div>    
   </div>
 
-  <div>
-    <div><hr/></div>
-    <a href="#" >Contact us</a>
-  </div>
 
   <footer>
-    <div>
+    <div id="footer_left">
         <a href="#">hello@workoholics.es</a>
         <p>+34 944 059 957</p>
     </div>
-    <div>
+    <div id="footer_right">
       <div>
         <h4>We love what we do.</h4>
         <h4>We are Worköholics.</h4>
       </div>
-      <div>
-        <input type="email" id="newsletter" name="lettermail" placeholder="E-mail">
-        <div>
-          <div>
+      <div id="letter_sign">
+        <form>
+          <input type="email" id="newsletter" name="lettermail" placeholder="E-mail">
           <input type="checkbox" id="acceptRPGD" name="checkboxRPGD" value="Accept">
           <label for="acceptRPGD"> 
             I have read and accepted the 
             <a href="#" >Terms and Conditions</a>
             .
-          </label>            
-          </div>
-          <button>Buy&raquo;</button>
-        </div>
+          </label>
+          <button><input type="submit" value="Submit">
+          <img src="images/BuyArrow.svg" alt="buy" width="31"></button>
+          <!-- <button>
+            <p>Submit</p>
+            <img src="images/BuyArrow.svg" alt="buy" width="31"></button>
+          </button>   -->
+        </form>
       </div>
     </div>
   </footer>
