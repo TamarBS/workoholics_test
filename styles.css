@@ -1,8 +1,45 @@
+@font-face {
+  font-family: DM sans;
+  src: url(fonts/dmsans-regular.ttf);
+}
+
+@font-face {
+  font-family: DM sans;
+  src: url(fonts/dmsans-bold.ttf);
+  font-weight: bold;
+}
+
+:root {
+  --main: #212222;
+  --secondary: #FB088C;
+}
+
+body{
+  font-family: DM sans, Roboto, Open Sans;
+  color: var(--main);
+}
+
+h2 {
+  font-size: 217px;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container {
   margin: 0;
   padding: 40px 90px 0px 90px;
 }
 
+.margin_b {
+  margin-bottom: 190px;
+}
+
+
+/* Header --------------------------------------------------------------- */
 header {
   position: relative;
   height: 50px;
@@ -15,33 +52,25 @@ header {
     transform: translate(-0%, -50%);
   }
 
-ul { padding: 0; }
+nav { right: 0; }
 
-  nav { right: 0; }
+  ul { padding: 0; }
 
     li { display: inline; }
     li:not(:first-child) { margin-left: 50px; }
 
-.margin_b {
-  margin-bottom: 190px;
-}
 
 /* Title --------------------------------------------------------------- */
 #title {
   position: relative;
 }
 
-h2 {
-  font-size: 217px;
-  margin: 5px;
-}
-
-#title img {
-  position: absolute;
-  right: 0.8em;
-  top: 0;
-  z-index: 1;
-}
+  #title img {
+    position: absolute;
+    right: 0.8em;
+    top: 0;
+    z-index: 1;
+  }
 
 .title_left {
   padding-left: 0.4em;
@@ -54,20 +83,20 @@ h2 {
   z-index: 2;  
 }
 
+
 /* Floating sentence ---------------------------------------------------------- */
 #under_title {
   position: relative;
-  height: 100px;
+  height: auto;
 }
 
 #floating_sentence {
-  position: absolute;
   width: 70%;
-  right: 0;
+  margin-left: 30%;
 }
 
 .little_circle {
-  background-color: black;
+  background-color: var(--secondary);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -99,11 +128,11 @@ p {
   width: 100%;
   height: 1px;
   opacity: 0.5;
-  background-color: black;
+  background-color: var(--main);
 }
 
 .rectangle_pink {
-  background-color: pink;
+  background-color: var(--secondary);
   width: 50px;
   height: 14px;
   margin-right: 12px;
@@ -111,7 +140,7 @@ p {
 }
 
 .rectangle_black {
-  background-color: black;
+  background-color: var(--main);
   width: 50px;
   height: 14px;
   margin-right: 12px;
@@ -192,7 +221,7 @@ img[alt="camiseta"] {
 .line_contact {
   height: 44px;
   width: 2px;
-  background-color: pink;
+  background-color: var(--secondary);
   margin: auto;
   margin-bottom: 16px;
 }
@@ -207,7 +236,8 @@ img[alt="camiseta"] {
 /* Footer ---------------------------------------------------------------*/
 
 footer {
-  background-color: gray;
+  background-color: var(--main);
+  color: white !important;
   margin: 0;
   padding: 90px;
   display: flex;
@@ -226,6 +256,13 @@ footer {
   width: 70%;
   display: inline-block;
 }
+footer button input{
+  color: white;
+}
+
+footer button img {
+  filter: invert(1);
+}
 
 h4 {
   margin: 0;
@@ -239,6 +276,20 @@ h4 {
 input[type="email"] {
   width: 100%;
   margin-bottom: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  line-height: 3;
+  color: white;
+}
+
+
+input[type="email"]:focus{
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--secondary);
 }
 
 label {
@@ -252,25 +303,33 @@ input[type="submit"], form img {
   margin-right: 12px;
 }
 
-/* input[type="submit"] {
-  display: inline-block;
-  float: right;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-
+label a {
+  text-decoration: underline !important;
 }
 
-  input[type="submit"] img {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    vertical-align: top; */
+input[type="checkbox"] {
+  appearance: none;
+  position: relative;
+  border: 1px solid #ffff;
+  width: 17px;
+  height: 17px;
+  margin: 0 12px 0 0;
+}
 
-  }
+input[type="checkbox"]:hover {
+  border-color:  var(--secondary);
+}
 
-  /* button p {
-    font-size: 20px;
-    margin-right: 16px;
-  } */
+input[type="checkbox"]:checked {
+  background-color: var(--secondary);
+  border: none;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '\2714';
+	font-size: 14px;
+  position: absolute;
+	top: -1px;
+	left: 2px;
+	color: #ffff;
+}
