@@ -285,10 +285,10 @@ footer button img {
     }
   
   /* Checkbox input */
-  label { font-size: 15px; }
+  form div { display: flex; }
+
+  label { font-size: 15px; display: block;}
   label a { text-decoration: underline !important; }  
-
-
 
   /* Checkbox box re-styling */
   input[type="checkbox"] {
@@ -321,5 +321,89 @@ footer button img {
     background-color: transparent;
     border: none;
     font-size: 20px;
-    margin-left: 12px;
   }
+
+  input[type="submit"] {
+    margin-right: 12px;
+  }
+
+
+  /* Media queries -------------------------------------------------------*/
+  @media only screen and (max-width: 600px) {
+    
+    body { margin: 0; }
+
+    .container { 
+      padding: 15px;
+      overflow: hidden;
+    }
+
+    nav, #contact { display: none; }
+
+    h2 { font-size: 118px; }
+    h3 { font-size: 50px; margin: 0;}
+    h4 { font-size: 24px;}
+
+    header img { width: 149px;}
+
+    #title img {
+      left: 4em;
+      top: 6em;
+      width: 350px;
+  }
+
+  .title-right { right: 1.02em;}
+  .title_left { padding-left: 0.5em;}
+
+
+  #floating_sentence {
+    width: 100%;
+    margin-left: 0;
+  }
+
+    #floating_sentence li {
+      font-size: 24px;
+    }
+
+  .mitad { width: 100%; height: 360px;}
+
+    img[alt="camiseta"] {left: 6em;}
+    .mitad img:first-child { height: 360px;}
+
+  .text { margin-bottom: 15px; width: 60%;}  
+    .text p { font-size: 14px; }
+
+  .rectangle_black, .rectangle_pink { width: 31px;}
+
+  .caracteristics { margin-top: 30px; margin-bottom: 10px; }
+
+  button { 
+    float: none;
+    display: block;
+    margin-top: 3em;
+  }
+
+    button p { font-size: 18px;}
+
+  #card_bottle { left: 0; margin-top: 100px;}
+
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 14px;
+  }
+
+  #footer_left, #footer_right {
+    width: 100%;
+    display: block;
+  }
+
+    #footer_left a, #footer_left p { font-size: 18px;}
+
+  #letter_sign {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+
+}
