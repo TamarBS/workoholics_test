@@ -142,6 +142,7 @@ a:hover {
   height: 14px;
   margin-right: 12px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .rectangle_black {
@@ -150,6 +151,7 @@ a:hover {
   height: 14px;
   margin-right: 12px;
   display: inline-block;
+  cursor: pointer;
 }
 
 button {
@@ -158,6 +160,7 @@ button {
   padding: 5px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -355,7 +358,7 @@ footer button img {
     overflow: hidden;
   }
 
-  #contact { display: none; }
+  .contact { display: none; }
 
   h2 { font-size: 118px; }
   h3 { font-size: 50px; margin: 0;}
