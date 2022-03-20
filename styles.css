@@ -212,7 +212,7 @@ img[alt="camiseta"] {
 
 
 /* Contact --------------------------------------------------------------- */
-#contact {
+.contact {
   position: fixed;
   bottom: 6em;
   right: 33px;
@@ -226,12 +226,16 @@ img[alt="camiseta"] {
   margin-bottom: 16px;
 }
 
-#contact a {
+.contact a {
   vertical-align: sub;
   writing-mode: vertical-rl;
   text-orientation: mixed;
   font-size: 24px;
 }
+
+  /* Text change depending on background */
+ .contact { mix-blend-mode: difference; }
+
 
 
 /* Footer ---------------------------------------------------------------*/
