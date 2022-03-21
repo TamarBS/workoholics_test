@@ -35,5 +35,8 @@ function stickyNav() {
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
   const addContact = document.getElementById("navList");
   addContact.innerHTML += "<li><a href'#'>Contact</a></li>";
+
+  const addWords = document.getElementById ("sentence");
+  sentence.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <b>vulputate dui efficitur</b> ultrices pharetra. Praesent tempor mollis purus nec fringilla vel commodo.";
 }
 
