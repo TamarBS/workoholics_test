@@ -161,7 +161,6 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-
 }
 
   button >* {
@@ -423,6 +422,15 @@ footer button img {
     margin-top: 50px;
     margin-bottom: 80px;
   }
+}
+
+@media only screen and (min-width: 600px) {
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: calc(100% - 180px);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,.97) 100%);
+  }  
 }
 
 

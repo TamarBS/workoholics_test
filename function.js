@@ -16,3 +16,17 @@ function shirtToSec() {
   var mainShirt = document.getElementById("shirt");
   mainShirt.src = "images/Tshirt1.png";  
 }
+
+// Sticky menu
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("navBar");
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
